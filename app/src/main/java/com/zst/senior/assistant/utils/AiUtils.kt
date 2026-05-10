@@ -56,6 +56,7 @@ suspend fun processInputWithGemini(textInput: String, language: String): AiRespo
             1. ONE-TIME EVENT (e.g., "doctor visit tomorrow") -> use status: "success", provide title, time (HH:mm, 24h format, max 23:59), and date (YYYY-MM-DD).
             2. RECURRING (e.g., "remind me on Mondays and Wednesdays") -> use status: "recurring", provide title, time (HH:mm, 24h format), and daysOfWeek as an ARRAY OF NUMBERS (1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri, 6=Sat, 7=Sun. E.g., [1, 3]).
             3. OTHER (questions, chat) -> use status: "chat", provide message.
+            4. LANGUAGE: You MUST respond EXCLUSIVELY in ENGLISH. All values for "title" and "message" MUST be in English.
 
             JSON RESPONSE FORMAT:
             {
@@ -77,6 +78,7 @@ suspend fun processInputWithGemini(textInput: String, language: String): AiRespo
             1. JEDNORAZOWE WYDARZENIE (np. wizyta u lekarza na jutro) -> użyj status: "success", podaj title, time (HH:mm, format 24h, max 23:59) i date (YYYY-MM-DD).
             2. CYKLICZNE (np. "przypominaj w poniedziałki i środy") -> użyj status: "recurring", podaj title, time (HH:mm, format 24h) oraz daysOfWeek jako TABLICĘ LICZB (1=Pon, 2=Wt, 3=Śr, 4=Czw, 5=Pt, 6=Sob, 7=Nie. Np. [1, 3]).
             3. INNE (pytania, pogawędka) -> użyj status: "chat", podaj message.
+            4. JĘZYK: Musisz odpowiadać WYŁĄCZNIE w języku POLSKIM. Wszystkie wartości dla "title" oraz "message" MUSZĄ być po polsku.
             
             FORMAT ODPOWIEDZI JSON:
             {
