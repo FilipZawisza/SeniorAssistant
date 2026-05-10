@@ -1,0 +1,603 @@
+<resources>
+    <string name="app_name">Senior Assistant</string>
+
+    <!-- Common -->
+    <string name="common_back">Wstecz</string>
+    <string name="common_save">ZAPISZ</string>
+    <string name="common_cancel">Anuluj</string>
+    <string name="common_understand">Rozumiem</string>
+    <string name="common_delete">USUŃ</string>
+    <string name="common_error">Błąd</string>
+    <string name="common_loading">Ładowanie…</string>
+    <string name="common_confirm">Zatwierdź</string>
+    <string name="common_later">Później</string>
+    <string name="common_try_again">Spróbuj ponownie</string>
+    <string name="common_send">Wyślij</string>
+    <string name="common_waiting">Czekaj…</string>
+    <string name="common_sos">SOS</string>
+
+    <!-- Login Screen -->
+    <string name="login_back">Wstecz</string>
+    <string name="login_logo_desc">Logo aplikacji</string>
+    <string name="login_welcome_back">Witaj ponownie!</string>
+    <string name="login_subtitle">Zaloguj się, aby kontynuować.</string>
+    <string name="login_email_label">Adres E-mail</string>
+    <string name="login_email_icon_desc">Ikona pola wpisywania e-mail</string>
+    <string name="login_password_label">Hasło</string>
+    <string name="login_password_icon_desc">Ikona pola wpisywania hasła</string>
+    <string name="login_password_hide">Ukryj hasło</string>
+    <string name="login_password_show">Pokaż hasło</string>
+    <string name="login_forgot_password">Nie pamiętasz hasła?</string>
+    <string name="login_loading">Logowanie…</string>
+    <string name="login_button">Zaloguj się</string>
+    <string name="login_no_account">Nie masz konta?</string>
+    <string name="login_register_button">Zarejestruj się</string>
+    <string name="login_error_email_empty">Wpisz adres e-mail</string>
+    <string name="login_error_email_invalid">Niepoprawny format adresu e-mail</string>
+    <string name="login_error_password_empty">Wpisz hasło</string>
+    <string name="login_error_password_short">Hasło jest za krótkie</string>
+
+    <!-- Forgot Password Screen -->
+    <string name="forgot_password_title">Zresetuj hasło</string>
+    <string name="forgot_password_subtitle">Podaj adres e-mail powiązany z Twoim kontem, a wyślemy Ci link do zmiany hasła.</string>
+    <string name="forgot_password_button">Wyślij link</string>
+    <string name="forgot_password_email_label">Adres E-mail</string>
+    <string name="forgot_password_error_email_empty">Wpisz adres e-mail</string>
+    <string name="forgot_password_error_email_invalid">Niepoprawny format adresu e-mail</string>
+    <string name="forgot_password_back">Wróć</string>
+    <string name="forgot_password_icon_desc">Ikona kłódki oznaczająca resetowanie hasła</string>
+
+    <!-- Register Screen -->
+    <string name="register_title">Utwórz konto</string>
+    <string name="register_subtitle">Wypełnij formularz, aby dołączyć.</string>
+    <string name="register_success_title">Rejestracja zakończona</string>
+    <string name="register_success_message">Wysłano link weryfikacyjny! Sprawdź swoją skrzynkę e-mail (również folder spam), aby aktywować konto przed zalogowaniem.</string>
+    <string name="register_understand">Rozumiem</string>
+    <string name="register_back">Wstecz</string>
+    <string name="register_role_label">Rejestruję się jako:</string>
+    <string name="register_role_senior">Senior</string>
+    <string name="register_role_volunteer">Wolontariusz</string>
+    <string name="register_first_name_label">Imię</string>
+    <string name="register_last_name_label">Nazwisko</string>
+    <string name="register_phone_label">Telefon</string>
+    <string name="register_city_label">Miasto</string>
+    <string name="register_street_label">Ulica</string>
+    <string name="register_confirm_password_label">Potwierdź hasło</string>
+    <string name="register_error_passwords_mismatch">Hasła nie są zgodne.</string>
+    <string name="register_icon_profile_desc">Ikona profilu</string>
+    <string name="register_icon_email_desc">Ikona e-mail</string>
+    <string name="register_icon_phone_desc">Ikona telefonu</string>
+    <string name="register_icon_city_desc">Ikona miasta</string>
+    <string name="register_icon_home_desc">Ikona domu</string>
+    <string name="register_icon_lock_desc">Ikona kłódki</string>
+    <string name="register_button">Zarejestruj się</string>
+
+    <!-- Admin Welcome Screen -->
+    <string name="admin_welcome_title">Panel Administratora</string>
+    <string name="admin_welcome_greeting">Witaj, %s!</string>
+    <string name="admin_welcome_subtitle">Zarządzaj systemem</string>
+    <string name="admin_welcome_seniors">Seniorzy</string>
+    <string name="admin_welcome_seniors_sub">Zarządzaj kontami seniorów</string>
+    <string name="admin_welcome_volunteers">Wolontariusze</string>
+    <string name="admin_welcome_volunteers_sub">Zarządzaj kontami opiekunów</string>
+    <string name="admin_welcome_orders">Zlecenia</string>
+    <string name="admin_welcome_orders_sub">Przeglądaj aktywne prośby</string>
+    <string name="admin_welcome_chat">Czat ogólny</string>
+    <string name="admin_welcome_chat_sub">Rozmawiaj z innymi</string>
+    <string name="admin_welcome_archive">Archiwum</string>
+    <string name="admin_welcome_archive_sub">Historia zakończonych zleceń</string>
+
+    <!-- Senior Welcome Screen -->
+    <string name="welcome_greeting">Dzień dobry!</string>
+    <string name="welcome_subtitle">Twój kompan każdego dnia</string>
+    <string name="welcome_info_tts">Informacje o aplikacji</string>
+    <string name="welcome_logout_tts">Wylogowano z aplikacji</string>
+    <string name="welcome_about_desc">O aplikacji</string>
+    <string name="welcome_logout_desc">Wyloguj</string>
+    <string name="welcome_help_title">Potrzebuję pomocy</string>
+    <string name="welcome_help_subtitle">Zakupy, transport, naprawy</string>
+    <string name="welcome_my_orders_title">Moje zlecenia</string>
+    <string name="welcome_my_orders_subtitle">Status aktywnych zgłoszeń</string>
+    <string name="welcome_ai_assistant_title">Inteligentny asystent</string>
+    <string name="welcome_ai_assistant_subtitle">Powiedz, co zrobić</string>
+    <string name="welcome_brain_training_title">Trening umysłu</string>
+    <string name="welcome_brain_training_subtitle">Zagraj w Seniordle</string>
+    <string name="welcome_chat_title">Czat ogólny</string>
+    <string name="welcome_chat_subtitle">Rozmawiaj z innymi</string>
+    <string name="welcome_reminders_title">Przypomnienia</string>
+    <string name="welcome_calendar_title">Kalendarz</string>
+    <string name="welcome_profile_title">Profil</string>
+    <string name="welcome_settings_title">Ustawienia</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Ustawienia</string>
+    <string name="settings_subtitle">Dostosuj aplikację do swoich potrzeb</string>
+    <string name="settings_tts_title">Asystent głosowy</string>
+    <string name="settings_tts_subtitle">Czytanie na głos klikanych elementów</string>
+    <string name="settings_tts_enabled">Asystent głosowy włączony</string>
+    <string name="settings_tts_disabled">Asystent głosowy wyłączony</string>
+    <string name="settings_contrast_title">Wysoki kontrast</string>
+    <string name="settings_contrast_subtitle">Tryb żółto-czarny dla lepszej widoczności</string>
+    <string name="settings_contrast_enabled">Wysoki kontrast włączony</string>
+    <string name="settings_contrast_disabled">Wysoki kontrast wyłączony</string>
+    <string name="settings_font_size_title">Rozmiar tekstu</string>
+    <string name="settings_font_small">Mały</string>
+    <string name="settings_font_default">Domyślny</string>
+    <string name="settings_font_large">Duży</string>
+    <string name="settings_font_preview">Przykładowy tekst</string>
+    <string name="settings_font_tts_format">Rozmiar tekstu ustawiony na %d procent</string>
+    <string name="settings_language_title">Język aplikacji</string>
+    <string name="settings_language_subtitle">Wybierz preferowany język interfejsu</string>
+    <string name="settings_language_pl">Polski 🇵🇱</string>
+    <string name="settings_language_en">Angielski 🇺🇸</string>
+    <string name="settings_icon_desc">Ikona ustawień</string>
+    <string name="settings_card_icon_desc">Ikona: %s</string>
+    <string name="settings_section_icon_desc">Ikona sekcji: %s</string>
+    <string name="settings_back">Wstecz</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">Profil</string>
+    <string name="profile_back">Wstecz</string>
+    <string name="profile_save">ZAPISZ</string>
+    <string name="profile_avatar_desc">Zdjęcie profilowe</string>
+    <string name="profile_error_title">Błąd profilu</string>
+    <string name="profile_points_desc">Punkty Seniordle</string>
+    <string name="profile_points_format">Punkty Seniordle: %d</string>
+    <string name="profile_view_leaderboard">ZOBACZ RANKING</string>
+    <string name="profile_rating_desc">Ocena wolontariusza</string>
+    <string name="profile_volunteer_stats_format">Ocena: %.1f\nUkończone zlecenia: %d</string>
+    <string name="profile_no_ratings">Brak ocen. Pomóż komuś!</string>
+    <string name="profile_personal_data">Dane osobowe</string>
+    <string name="profile_first_name_label">Imię</string>
+    <string name="profile_last_name_label">Nazwisko</string>
+    <string name="profile_email_label">E-mail</string>
+    <string name="profile_phone_label">Telefon</string>
+    <string name="profile_city_label">Miasto</string>
+    <string name="profile_street_label">Ulica</string>
+    <string name="profile_guardian_section">Opiekun (Kontakt SOS)</string>
+    <string name="profile_guardian_subtitle">Numer, na który wyślemy powiadomienie alarmowe.</string>
+    <string name="profile_guardian_phone_label">Numer telefonu opiekuna</string>
+    <string name="profile_change_password">ZMIEŃ HASŁO</string>
+    <string name="profile_delete_account">USUŃ KONTO</string>
+    <string name="profile_delete_confirm_title">Potwierdź usunięcie konta</string>
+    <string name="profile_delete_confirm_message">Czy na pewno chcesz trwale usunąć swoje konto? Tej operacji nie można cofnąć.</string>
+    <string name="profile_delete_confirm_button">USUŃ</string>
+    <string name="profile_cancel">Anuluj</string>
+
+    <!-- Profile Status Messages (ViewModel) -->
+    <string name="profile_msg_updated">Zaktualizowano profil!</string>
+    <string name="profile_msg_no_user">Brak zalogowanego użytkownika.</string>
+    <string name="profile_msg_load_error">Błąd ładowania profilu: %s</string>
+    <string name="profile_msg_email_verification_sent">Wysłano link weryfikacyjny na stary adres e-mail w celu potwierdzenia zmiany.</string>
+    <string name="profile_msg_password_reset_sent">Wysłano link do resetowania hasła na Twój e-mail.</string>
+    <string name="profile_msg_account_deleted">Konto zostało pomyślnie usunięte.</string>
+    <string name="profile_msg_guardian_required">Ze względów bezpieczeństwa, numer telefonu opiekuna jest wymagany!</string>
+
+    <!-- Calendar Screen -->
+    <string name="calendar_title">Kalendarz</string>
+    <string name="calendar_back">Wstecz</string>
+    <string name="calendar_add_event_desc">Dodaj wydarzenie</string>
+    <string name="calendar_events_for_date">Wydarzenia na: %s</string>
+    <string name="calendar_no_events">Brak wydarzeń na ten dzień</string>
+    <string name="calendar_empty_icon_desc">Brak zaplanowanych wydarzeń</string>
+    <string name="calendar_msg_deleted">Usunięto wydarzenie</string>
+    <string name="calendar_msg_added">Dodano i zapisano w chmurze!</string>
+    <string name="calendar_add_title">Dodaj nowe wydarzenie</string>
+    <string name="calendar_field_name">Nazwa</string>
+    <string name="calendar_field_time">GODZINA</string>
+    <string name="calendar_time_picker_title">Wybierz godzinę</string>
+
+    <!-- About Screen -->
+    <string name="about_title">O aplikacji</string>
+    <string name="about_back">Wstecz</string>
+    <string name="about_version">Wersja 1.0.0</string>
+    <string name="about_section_docs">Dokumenty</string>
+    <string name="about_policy">Polityka prywatności (RODO)</string>
+    <string name="about_terms">Regulamin korzystania</string>
+    <string name="about_section_team">Zespół</string>
+    <string name="about_team_desc">Projekt tworzony z pasją przez uczniów Zespołu Szkół Technicznych w Grodzisku Wielkopolskim.</string>
+    <string name="about_section_tech">Technologie</string>
+    <string name="about_tech_desc">Aplikacja została zbudowana przy użyciu nowoczesnych technologii:</string>
+    <string name="about_section_contact">Kontakt i Kod</string>
+    <string name="about_email_subject">Pytanie dotyczące aplikacji Senior Assistant</string>
+    <string name="about_email_chooser">Wyślij e-mail...</string>
+    <string name="about_section_project">O projekcie</string>
+    <string name="about_project_desc">Senior Assistant to innowacyjna platforma stworzona z myślą o seniorach i wolontariuszach. Naszym celem jest ułatwienie codziennego życia osobom starszym oraz budowanie bezpiecznej społeczności opartej na wzajemnej pomocy.</string>
+    <string name="about_copyright">© 2026 Senior Assistant Team</string>
+    <string name="about_section_icon_desc">Ikona sekcji: %s</string>
+    <string name="about_open_doc_desc">Otwórz dokument</string>
+    <string name="about_link_icon_desc">Ikona odnośnika: %s</string>
+
+    <!-- Harmonogram (Reminders) Screen -->
+    <string name="reminders_title">Przypomnienia</string>
+    <string name="reminders_back">Wstecz</string>
+    <string name="reminders_add_desc">Dodaj zadanie</string>
+    <string name="reminders_empty_title">Twój harmonogram jest pusty</string>
+    <string name="reminders_empty_subtitle">Dodaj cykliczne przypomnienia o lekach, opłatach lub regularnych wizytach.</string>
+    <string name="reminders_msg_deleted">Usunięto pomyślnie!</string>
+    <string name="reminders_msg_updated">Zaktualizowano pomyślnie!</string>
+    <string name="reminders_msg_added">Dodano przypomnienie!</string>
+    <string name="reminders_time_format">Godzina: %s</string>
+    <string name="reminders_delete_desc">Usuń</string>
+    <string name="reminders_empty_icon_desc">Ikona braku przypomnień</string>
+    <string name="reminders_item_icon_desc">Ikona przypomnienia cyklicznego</string>
+    <string name="reminders_everyday">Codziennie</string>
+    <string name="reminders_once">Jednorazowo</string>
+    <string name="reminders_edit_title">Edytuj przypomnienie</string>
+    <string name="reminders_new_title">Nowe przypomnienie</string>
+    <string name="reminders_field_name">Nazwa (np. leki)</string>
+    <string name="reminders_repeat_label">Powtarzaj:</string>
+
+    <!-- Admin Orders Screen -->
+    <string name="admin_orders_title">Zlecenia</string>
+    <string name="admin_orders_empty_title">Brak zleceń</string>
+    <string name="admin_orders_empty_subtitle">W systemie nie ma obecnie żadnych aktywnych zleceń.</string>
+    <string name="admin_archive_title">Archiwum</string>
+    <string name="admin_archive_empty_title">Puste Archiwum</string>
+    <string name="admin_archive_empty_subtitle">Nie znaleziono żadnych zakończonych zleceń in historii.</string>
+    <string name="admin_orders_back">Wróć</string>
+
+    <!-- Privacy Policy Screen -->
+    <string name="privacy_title">Polityka Prywatności</string>
+    <string name="privacy_back">Wróć</string>
+    <string name="privacy_header">Polityka Prywatności Aplikacji SeniorAssistant</string>
+    <string name="privacy_section1_title">1. Administrator Danych Osobowych</string>
+    <string name="privacy_section1_content">Administratorem Twoich danych osobowych jest Dominik Szymczak i Filip Zawisza. Przetwarzamy Twoje dane z najwyższą starannością, zgodnie z przepisami Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO).</string>
+    <string name="privacy_section2_title">2. Jakie dane zbieramy?</string>
+    <string name="privacy_section2_content">Podczas korzystania z Aplikacji możemy gromadzić następujące dane:\n• Dane podane przy rejestracji: imię, nazwisko, adres e-mail, numer telefonu.\n• Dane profilowe: wybrana rola (Senior lub Wolontariusz), preferencje dotyczące przypomnień.\n• Dane techniczne i systemowe: informacje o urządzeniu, logi błędów.\n• Dane o lokalizacji: (opcjonalnie) zbierane wyłącznie za Twoją zgodą, w celu dopasowania próśb o pomoc do najbliższych wolontariuszy.\n• Treści wprowadzane w aplikacji: treść próśb o pomoc, nazwy przypomnień (np. o lekach) oraz zapytania kierowane do Asystenta AI.</string>
+    <string name="privacy_section3_title">3. Cel i podstawa prawna przetwarzania</string>
+    <string name="privacy_section3_content">Twoje dane są przetwarzane in następujących celach:\n• Świadczenie usług w ramach Aplikacji, w tym umożliwienie kontaktu między Seniorami a Wolontariuszami (art. 6 ust. 1 lit. b RODO).\n• Personalizacja funkcji Aplikacji, takich jak przypomnienia (art. 6 ust. 1 lit. b RODO).\n• Zapewnienie bezpieczeństwa, zapobieganie oszustwom i wsparcie techniczne (art. 6 ust. 1 lit. f RODO).\n• Podstawowe dane kontaktowe i profilowe Seniora są widoczne dla Wolontariusza podejmującego zgłoszenie (i odwrotnie).</string>
+    <string name="privacy_section4_title">4. Udostępnianie danych i Asystent AI</string>
+    <string name="privacy_section4_content">• Aby umożliwić realizację pomocy, podstawowe dane kontaktowe i profilowe Seniora są widoczne dla Wolontariusza podejmującego zgłoszenie (i odwrotnie).\n• W przypadku korzystania z funkcji Asystenta AI, wprowadzane zapytania mogą być przetwarzane przez zewnętrznych dostawców usług sztucznej inteligencji (np. OpenAI, Google), w zależności od skonfigurowanego klucza API, wyłącznie w celu wygenerowania odpowiedzi.\n• Nie sprzedajemy Twoich danych osobowych podmiotom trzecim.</string>
+    <string name="privacy_section5_title">5. Prawa Użytkownika (RODO)</string>
+    <string name="privacy_section5_content">Zgodnie z przepisami prawa masz prawo do:\n• Dostępu do swoich danych oraz otrzymania ich kopii.\n• Sprostowania (poprawiania) nieprawidłowych danych.\n• Usunięcia danych (\"prawo do bycia zapomnianym\") poprzez usunięcie konta w ustawieniach Aplikacji.\n• Ograniczenia przetwarzania oraz wniesienia sprzeciwu.</string>
+    <string name="privacy_section6_title">6. Bezpieczeństwo danych</string>
+    <string name="privacy_section6_content">Stosujemy odpowiednie środki techniczne i organizacyjne, aby chronić Twoje dane przed nieuprawnionym dostępem, utratą czy zniszczeniem. Należy jednak pamiętać, że żadna transmisja danych w Internecie nie jest w 100% bezpieczna.</string>
+    <string name="privacy_section7_title">7. Kontakt</string>
+    <string name="privacy_section7_content">W przypadku pytań dotyczących prywatności, edycji lub usunięcia danych, prosimy o kontakt pod adresem e-mail: kontakt@seniorassistant.pl.</string>
+
+    <!-- Volunteer Welcome Screen -->
+    <string name="volunteer_greeting">Witaj, %s!</string>
+    <string name="volunteer_subtitle">Dziękujemy, że pomagasz.</string>
+    <string name="volunteer_available_orders_title">Dostępne zlecenia</string>
+    <string name="volunteer_available_orders_subtitle">Szukaj osób potrzebujących pomocy</string>
+    <string name="volunteer_my_orders_title">Moje zlecenia</string>
+    <string name="volunteer_my_orders_subtitle">Zarządzaj przyjętymi zadaniami</string>
+    <string name="volunteer_calendar_title">Kalendarz</string>
+    <string name="volunteer_calendar_subtitle">Planuj swoje wizyty i czas</string>
+    <string name="volunteer_default_name">Wolontariuszu</string>
+
+    <!-- Helper Dashboard Screen -->
+    <string name="helper_dashboard_title">Dostępne zlecenia</string>
+    <string name="helper_dashboard_back">Wróć</string>
+    <string name="helper_dashboard_refresh">Odśwież</string>
+    <string name="helper_dashboard_sort">Sortuj</string>
+    <string name="helper_dashboard_option_selected">Zaznaczono opcję</string>
+    <string name="helper_dashboard_filter_dist">Filtruj dystans</string>
+    <string name="helper_dashboard_dist_selected">Wybrano ten dystans</string>
+    <string name="helper_dashboard_error_title">Wystąpił błąd</string>
+    <string name="helper_dashboard_error_icon_desc">Ikona ostrzeżenia o błędzie</string>
+    <string name="helper_dashboard_dist_format">📍 %.1f km od Ciebie (%s)</string>
+    <string name="helper_dashboard_loc_icon_desc">Pinezka lokalizacji</string>
+    <string name="helper_dashboard_loc_searching">Wyszukiwanie dokładnej lokalizacji...</string>
+    <string name="helper_dashboard_empty_icon_desc">Ikona pustej listy zleceń</string>
+    <string name="helper_dashboard_empty_title">Brak zleceń</string>
+    <string name="helper_dashboard_empty_subtitle">W promieniu %d km nie znaleźliśmy zleceń.</string>
+    <string name="helper_dashboard_offline_title">Tryb Offline</string>
+    <string name="helper_dashboard_offline_message">Brak połączenia z internetem. Nie możesz obecnie pobierać nowych zleceń ani aktualizować statusu obecnych. \n\nTwoja lokalizacja GPS i dane zapisane w pamięci urządzenia są nadal dostępne.</string>
+    <string name="helper_dashboard_understand">Rozumiem</string>
+    <string name="helper_dashboard_sort_dist_asc">Dystans: rosnąco</string>
+    <string name="helper_dashboard_sort_dist_desc">Dystans: malejąco</string>
+    <string name="helper_dashboard_sort_time_asc">Czas: od najstarszych</string>
+    <string name="helper_dashboard_sort_time_desc">Czas: od najnowszych</string>
+
+    <!-- Battery Optimization Dialog -->
+    <string name="battery_dialog_title">Ważne ustawienie baterii</string>
+    <string name="battery_dialog_message">Aby funkcje takie jak detekcja upadków, przypomnienia o lekach czy lokalizacja działały niezawodnie w tle, aplikacja potrzebuje wyłączenia optymalizacji baterii.\n\nW kolejnym kroku wybierz \"Zezwól\" (lub \"Bez ograniczeń\").</string>
+    <string name="battery_dialog_confirm">Przejdź do ustawień</string>
+    <string name="battery_dialog_dismiss">Później</string>
+
+    <!-- Onboarding Screen -->
+    <string name="onboarding_skip">Pomiń</string>
+    <string name="onboarding_next">Dalej</string>
+    <string name="onboarding_welcome_title">Witaj w Senior Assistant</string>
+    <string name="onboarding_welcome_desc">Zapewniamy Ci niezależność i bezpieczeństwo, a Twoim najbliższym – bezcenny spokój ducha.</string>
+    <string name="onboarding_why_title">Dlaczego My?</string>
+    <string name="onboarding_why_desc">Prosta obsługa, sprawdzeni opiekunowie i błyskawiczny kontakt z bliskimi w razie potrzeby.</string>
+    <string name="onboarding_safety_title">Twoje dane są bezpieczne</string>
+    <string name="onboarding_safety_desc">Szanujemy Twoją prywatność. Dbamy o to, aby Twoje dane były chronione zgodnie z RODO.</string>
+    <string name="onboarding_ready_title">Jesteśmy gotowi!</string>
+    <string name="onboarding_ready_desc">Aplikacja Senior Assistant jest skonfigurowana. Zaakceptuj regulaminy, aby rozpocząć.</string>
+    <string name="onboarding_accept_prefix">Akceptuję </string>
+    <string name="onboarding_policy_link">Politykę Prywatności</string>
+    <string name="onboarding_terms_link">Regulamin Aplikacji</string>
+    <string name="onboarding_start_button">ZACZYNAMY</string>
+    <string name="onboarding_lang_select_title">Wybierz język / Select language</string>
+    <string name="onboarding_lang_pl">POLSKI 🇵🇱</string>
+    <string name="onboarding_lang_en">ENGLISH 🇺🇸</string>
+
+    <!-- Seniordle (Word Game) -->
+    <string name="game_title">Trening umysłu</string>
+    <string name="game_help_title">Jak grać?</string>
+    <string name="game_help_desc">Zgadnij pięcioliterowe słowo w sześciu próbach.</string>
+    <string name="game_help_green">Zielony: litera na dobrym miejscu.</string>
+    <string name="game_help_yellow">Żółty: litera jest w słowie, ale na złym miejscu.</string>
+    <string name="game_help_gray">Szary: litery nie ma w słowie.</string>
+    <string name="game_understand">Zrozumiałem</string>
+    <string name="game_loading_words">Pobieranie bazy słów...</string>
+    <string name="game_hint_button">Podpowiedź</string>
+    <string name="game_give_up_button">Poddaję się</string>
+    <string name="game_won_tts">Wspaniale! Zgadłeś słowo!</string>
+    <string name="game_lost_tts">Niestety. Prawidłowe słowo to %s.</string>
+    <string name="game_give_up_tts">Poddałeś się. Hasło to %s.</string>
+    <string name="game_points_won">GRATULACJE!\nZDOBYWASZ +%d PKT!</string>
+    <string name="game_word_was">SZUKANE SŁOWO:\n%s</string>
+    <string name="game_gave_up_msg">PODDAŁEŚ SIĘ.\nHASŁO TO:\n%s</string>
+    <string name="game_play_again">ZAGRAJ PONOWNIE</string>
+    <string name="game_view_leaderboard">Zobacz ranking Seniorów</string>
+    <string name="game_start_tts">Zgadnij pięcioliterowe słowo</string>
+    <string name="game_hint_found">Litera na %1$d. miejscu to \'%2$s\'</string>
+    <string name="game_hint_all_letters">Odgadłeś już wszystkie litery, ułóż je!</string>
+
+    <!-- SOS Emergency Screen -->
+    <string name="sos_title">ALARM SOS</string>
+    <string name="sos_subtitle">Pomoc jest w drodze...</string>
+    <string name="sos_loc_calculating">Trwa ustalanie precyzyjnej lokalizacji...</string>
+    <string name="sos_loc_error">Błąd odczytu GPS. Zapasowy: %s</string>
+    <string name="sos_loc_no_permission">Brak uprawnień GPS. Adres: %s</string>
+    <string name="sos_loc_gps_failed">Nie udało się pobrać GPS. Zapasowy: %s</string>
+    <string name="sos_sms_template_gps">PILNE! Potrzebuję pomocy SOS. Moja lokalizacja: %s. Mapa: %s</string>
+    <string name="sos_sms_template_profile">PILNE! Potrzebuję pomocy SOS. Moja lokalizacja (z profilu): %s</string>
+    <string name="sos_sms_no_permission_toast">Brak zgody na SMS. Zadzwoń na 112!</string>
+    <string name="sos_loc_label">Twoja pozycja (dla służb/opiekuna):</string>
+    <string name="sos_call_112">ZADZWOŃ NA 112</string>
+    <string name="sos_emergency_services">Służby ratunkowe</string>
+    <string name="sos_sms_to_carer">SMS DO OPIEKUNA</string>
+    <string name="sos_no_carer_number">BRAK NUMERU OPIEKUNA</string>
+    <string name="sos_cancel_alarm">To fałszywy alarm (Anuluj)</string>
+    <string name="sos_sms_sent_title">Wiadomość wysłana</string>
+    <string name="sos_sms_sent_message">Awaryjna wiadomość SOS z Twoją lokalizacją została pomyślnie wysłana do Twojego opiekuna.</string>
+    <string name="sos_understand">Rozumiem</string>
+    <string name="sos_loc_no_profile">Brak adresu w profilu</string>
+
+    <!-- Chat Screen -->
+    <string name="chat_title">Czat Ogólny</string>
+    <string name="chat_encrypted_msg">Wiadomości są szyfrowane (AES-256-GCM)</string>
+    <string name="chat_hint_input">Napisz wiadomość...</string>
+    <string name="chat_user_label">Użytkownik: %s</string>
+    <string name="chat_dialog_title">Opcje wiadomości</string>
+    <string name="chat_dialog_mute">Wyciszanie</string>
+    <string name="chat_dialog_ban">Blokowanie</string>
+    <string name="chat_mute_question">Na jak długo wyciszyć?</string>
+    <string name="chat_ban_question">Na jak długo zablokować?</string>
+    <string name="chat_delete_msg">Usuń wiadomość</string>
+    <string name="chat_unmute_user">Odcisz użytkownika</string>
+    <string name="chat_mute_user">Wycisz użytkownika...</string>
+    <string name="chat_unban_user">Odblokuj użytkownika</string>
+    <string name="chat_ban_user">Zablokuj użytkownika...</string>
+    <string name="chat_time_hour">1 godzina</string>
+    <string name="chat_time_hours">%d godziny</string>
+    <string name="chat_time_day">1 dzień</string>
+    <string name="chat_time_days">%d dni</string>
+    <string name="chat_time_forever">Na zawsze</string>
+    <string name="chat_close">Zamknij</string>
+    <string name="chat_user_anon">Użytkownik</string>
+
+    <!-- Fall Detection Service -->
+    <string name="fall_service_title">Asystent Seniora</string>
+    <string name="fall_service_desc">Detektor upadku czuwa w tle</string>
+    <string name="fall_sms_location">POMOCY! Wykryto upadek seniora. Lokalizacja: %s</string>
+    <string name="fall_sms_no_gps">POMOCY! Wykryto upadek seniora. Brak sygnału GPS.</string>
+    <string name="fall_sms_error">POMOCY! Wykryto upadek seniora. Błąd lokalizacji.</string>
+    <string name="fall_sms_no_permission">POMOCY! Wykryto upadek seniora (brak dostępu do GPS).</string>
+    <string name="fall_sms_generic">POMOCY! Wykryto upadek seniora.</string>
+
+    <!-- Admin Manage Users Screen -->
+    <string name="admin_manage_users_tab_add">DODAJ</string>
+    <string name="admin_manage_users_tab_block">BLOKUJ</string>
+    <string name="admin_manage_users_success_title">Konto utworzone!</string>
+    <string name="admin_manage_users_success_message">Użytkownik został zarejestrowany. Ze względów bezpieczeństwa Firebase, zostaniesz teraz wylogowany. Zaloguj się ponownie, aby kontynuować pracę.</string>
+    <string name="admin_manage_users_ban_confirm_title">Potwierdź blokadę</string>
+    <string name="admin_manage_users_ban_confirm_message">Czy na pewno chcesz zablokować użytkownika %1$s %2$s?</string>
+    <string name="admin_manage_users_unban_confirm_title">Odblokuj użytkownika</string>
+    <string name="admin_manage_users_unban_confirm_message">Czy chcesz przywrócić dostęp dla %s?</string>
+    <string name="admin_manage_users_new_user_title">Zarządzaj: %s</string>
+    <string name="admin_manage_users_first_name_label">Imię</string>
+    <string name="admin_manage_users_last_name_label">Nazwisko</string>
+    <string name="admin_manage_users_email_label">Email</string>
+    <string name="admin_manage_users_phone_label">Telefon</string>
+    <string name="admin_manage_users_city_label">Miasto</string>
+    <string name="admin_manage_users_street_label">Ulica i nr</string>
+    <string name="admin_manage_users_password_label">Hasło</string>
+    <string name="admin_manage_users_password_confirm_label">Powtórz hasło</string>
+    <string name="admin_manage_users_button_add">UTWÓRZ KONTO</string>
+    <string name="admin_manage_users_manage_bans_title">Zarządzaj blokadami</string>
+    <string name="admin_manage_users_email_to_ban_label">Email użytkownika</string>
+    <string name="admin_manage_users_ban_duration_label">Czas blokady (dni)</string>
+    <string name="admin_manage_users_ban_duration_hint">Pozostaw puste dla blokady stałej</string>
+    <string name="admin_manage_users_button_ban">BANUJ</string>
+    <string name="admin_manage_users_button_unban">ODBLOKUJ</string>
+    <string name="admin_manage_users_error_passwords_mismatch">Hasła nie są identyczne</string>
+    <string name="admin_manage_users_error_fields_empty">Wypełnij wymagane pola</string>
+    <string name="admin_manage_users_error_provide_email">Podaj email</string>
+    <string name="admin_manage_users_back">Wróć</string>
+    <string name="admin_manage_users_new_user_form_title">Nowy użytkownik: %s</string>
+
+    <!-- Leaderboard Screen -->
+    <string name="leaderboard_title">Ranking Seniorów</string>
+    <string name="leaderboard_top10">TOP 10</string>
+    <string name="leaderboard_my_score">Twój wynik</string>
+    <string name="leaderboard_points">Punkty: %d</string>
+    <string name="leaderboard_gold_desc">Złoty puchar</string>
+    <string name="leaderboard_silver_desc">Srebrny puchar</string>
+    <string name="leaderboard_bronze_desc">Brązowy puchar</string>
+    <string name="leaderboard_star_desc">ikona gwiazdki z punktami</string>
+
+    <!-- Senior Dashboard Screen -->
+    <string name="senior_dashboard_title">Potrzebuję pomocy</string>
+    <string name="senior_dashboard_sos_desc">SOS</string>
+    <string name="senior_dashboard_sos_call">WEZWIJ POMOC</string>
+    <string name="senior_dashboard_categories">Kategorie pomocy</string>
+    <string name="senior_dashboard_perm_config_title">Wymagana konfiguracja</string>
+    <string name="senior_dashboard_perm_config_message">Aplikacja potrzebuje dostępu do Twojej lokalizacji (zawsze) oraz wysyłania SMS.</string>
+    <string name="senior_dashboard_perm_config_hint">Aby funkcja ratunkowa SOS działała, musisz przejść do ustawień telefonu i upewnić się, że dla Lokalizacji zaznaczono \'Zezwalaj zawsze\'.</string>
+    <string name="senior_dashboard_open_settings">Otwórz Ustawienia</string>
+    <string name="senior_dashboard_cancel_sos">Anuluj (SOS nieaktywny)</string>
+    <string name="senior_dashboard_no_internet_title">Brak połączenia z siecią</string>
+    <string name="senior_dashboard_no_internet_message">Twój telefon nie ma obecnie połączenia z internetem. Niektóre funkcje, jak wysyłanie zleceń pomocy czy asystent głosowy, mogą nie działać. \n\nSystem SOS (SMS) oraz alarmy lokalne pozostają aktywne.</string>
+
+    <!-- Terms of Service Screen -->
+    <string name="tos_title">Regulamin</string>
+    <string name="tos_header">Regulamin korzystania z aplikacji mobilnej SeniorAssistant</string>
+    <string name="tos_section1_title">1. Postanowienia ogólne</string>
+    <string name="tos_section1_content">• SeniorAssistant to aplikacja mobilna przeznaczona dla systemu Android, której celem jest wspieranie komunikacji pomiędzy osobami starszymi a wolontariuszami.\n• Regulamin określa zasady świadczenia usług, warunki korzystania z aplikacji oraz prawa i obowiązki Użytkowników.\n• Pobranie, rejestracja i korzystanie z aplikacji oznacza akceptację niniejszego Regulaminu.</string>
+    <string name="tos_section2_title">2. Słowniczek pojęć</string>
+    <string name="tos_section2_content">• Aplikacja – oprogramowanie mobilne SeniorAssistant.\n• Użytkownik – każda osoba posiadająca konto w Aplikacji (Senior, Wolontariusz lub Administrator).\n• Senior – osoba starsza korzystająca z Aplikacji w celu uzyskania wsparcia.\n• Wolontariusz – osoba zarejestrowana w celu nieodpłatnego świadczenia pomocy.\n• Administrator – osoba zarządzająca systemem.</string>
+    <string name="tos_section3_title">3. Rejestracja i rodzaje kont</string>
+    <string name="tos_section3_content">• Korzystanie z pełnej funkcjonalności Aplikacji wymaga założenia konta (Senior lub Wolontariusz).\n• Użytkownik zobowiązany jest do podania prawdziwych i aktualnych danych kontaktowych.\n• Każdy Użytkownik może w dowolnym momencie edytować swoje dane z poziomu panelu głównego.</string>
+    <string name="tos_section4_title">4. Funkcjonalności Aplikacji i role Użytkowników</string>
+    <string name="tos_section4_content">• Konto Seniora umożliwia: tworzenie próśb o pomoc, ustawianie przypomnień o wizytach i lekach, komunikację z Asystentem AI.\n• Konto Wolontariusza umożliwia: przeglądanie aktywnych zgłoszeń i deklarowanie chęci ich realizacji.\n• Panel Administracyjny służy do zarządzania systemem i moderowania treści.</string>
+    <string name="tos_section5_title">5. Asystent AI i integracje</string>
+    <string name="tos_section5_content">• Aplikacja posiada wbudowaną integrację z Asystentem AI.\n• Treści generowane przez Asystenta AI mają charakter wyłącznie informacyjny i pomocniczy. Nie zastępują one porady specjalistycznej (np. medycznej czy prawnej).</string>
+    <string name="tos_section6_title">6. Ważne zastrzeżenia dotyczące zdrowia i bezpieczeństwa</string>
+    <string name="tos_section6_content">• Aplikacja NIE JEST urządzeniem medycznym. Funkcja przypomnień ma charakter pomocniczy. Twórcy nie ponoszą odpowiedzialności za pominięcie dawki leku.\n• Aplikacja NIE SŁUŻY do wzywania pomocy w sytuacjach zagrożenia życia. Należy wtedy dzwonić pod numer 112.\n• Wolontariusze udzielają pomocy dobrowolnie, w miarę możliwości. Aplikacja nie gwarantuje znalezienia wolontariusza do każdego zgłoszenia.</string>
+    <string name="tos_section7_title">7. Prawa i obowiązki Użytkowników</string>
+    <string name="tos_section7_content">• Użytkownicy zobowiązani są do korzystania z Aplikacji zgodnie z prawem i szacunkiem do innych.\n• Zakazane jest publikowanie treści obraźliwych lub wykorzystywanie Aplikacji do celów komercyjnych.\n• Administrator może zablokować konto naruszające Regulamin.</string>
+    <string name="tos_section8_title">8. Postanowienia końcowe</string>
+    <string name="tos_section8_content">• Twórcy Aplikacji zastrzegają sobie prawo do wprowadzania zmian w Regulaminie.\n• W sprawach nieuregulowanych zastosowanie mają odpowiednie przepisy prawa polskiego.</string>
+
+    <!-- Zlecenie Details Screen -->
+    <string name="order_details_title">Szczegóły zlecenia</string>
+    <string name="order_details_status_label">Status:</string>
+    <string name="order_details_date_label">Data dodania</string>
+    <string name="order_details_desc_label">Opis zlecenia</string>
+    <string name="order_details_senior_label">Zleceniodawca</string>
+    <string name="order_details_loc_gps_label">Aktualna lokalizacja (GPS)</string>
+    <string name="order_details_loc_profile_label">Adres stały (z profilu)</string>
+    <string name="order_details_phone_label">Telefon</string>
+    <string name="order_details_accept_button">PODEJMIJ ZLECENIE</string>
+    <string name="order_details_accepting">Przejmowanie…</string>
+    <string name="order_details_confirm_button">ZATWIERDŹ JAKO WYKONANE</string>
+    <string name="order_details_cancel_button">Anuluj Zlecenie</string>
+    <string name="order_details_report_no_show">Czas minął - wolontariusz nie przyszedł</string>
+    <string name="order_details_unavailable">To zlecenie nie jest już dostępne do podjęcia.</string>
+
+    <!-- Components -->
+    <string name="comp_add_help_title">Prośba o pomoc</string>
+    <string name="comp_add_help_subtitle">Opisz krótko, czego potrzebujesz.</string>
+    <string name="comp_add_help_field_label">Szczegóły</string>
+    <string name="comp_add_help_loc_loading">Pobieranie dokładnej lokalizacji…</string>
+    <string name="comp_add_help_no_internet">Brak połączenia z internetem. Wysyłanie zleceń jest tymczasowo niemożliwe.</string>
+    <string name="comp_add_help_send">Wyślij</string>
+    <string name="comp_perm_disclosure_title">Wymagane uprawnienia</string>
+    <string name="comp_perm_disclosure_message">Aplikacja Asystent Seniora zbiera dane o lokalizacji, aby umożliwić wysłanie Twojej dokładnej pozycji do opiekuna w momencie wykrycia upadku.</string>
+    <string name="comp_perm_disclosure_google_req">Dane te są zbierane i wysyłane (poprzez SMS) nawet wtedy, gdy aplikacja jest zamknięta lub nieużywana.</string>
+    <string name="comp_perm_disclosure_accept">Rozumiem i akceptuję</string>
+    <string name="comp_perm_disclosure_decline">Odrzuć</string>
+    <string name="comp_order_item_senior_volunteer_label">Twój wolontariusz:</string>
+    <string name="comp_order_item_senior_new_volunteer">Nowy wolontariusz</string>
+    <string name="comp_order_item_senior_call_volunteer">Zadzwoń: %s</string>
+    <string name="comp_order_item_senior_confirm_btn">POTWIERDŹ I OCEŃ</string>
+    <string name="comp_order_item_senior_reject_btn">Zgłoś, że NIE WYKONAŁ</string>
+    <string name="comp_order_item_senior_cancel_btn">ANULUJ ZLECENIE</string>
+    <string name="comp_order_item_senior_status_free">Szukam wolontariusza</string>
+    <string name="comp_order_item_senior_status_active">W trakcie realizacji</string>
+    <string name="comp_order_item_senior_status_confirm">Wymaga potwierdzenia</string>
+    <string name="comp_order_item_volunteer_waiting">Oczekiwanie na seniora</string>
+    <string name="comp_order_item_volunteer_senior_label">Senior</string>
+    <string name="comp_order_item_volunteer_loc_gps">Lokalizacja GPS</string>
+    <string name="comp_order_item_volunteer_loc_profile">Adres stały</string>
+    <string name="comp_order_item_volunteer_call_label">Zadzwoń do seniora</string>
+    <string name="comp_order_item_volunteer_finish_btn">ZAKOŃCZ ZLECENIE</string>
+    <string name="comp_order_item_volunteer_pending_btn">CZEKAM NA POTWIERDZENIE</string>
+    <string name="comp_order_item_public_no_desc">Brak opisu</string>
+    <string name="comp_text_field_hide_password">Ukryj hasło</string>
+    <string name="comp_text_field_show_password">Pokaż hasło</string>
+    <string name="comp_fall_dialog_alarm_desc">Alarm</string>
+    <string name="comp_fall_dialog_title">Wykryto upadek!</string>
+    <string name="comp_fall_dialog_countdown_prefix">Wysłanie powiadomienia za:</string>
+    <string name="comp_fall_dialog_cancel_btn">ODWOŁAJ ALARM</string>
+    <string name="comp_fall_dialog_hint">Naciśnij przycisk, jeśli czujesz się dobrze.</string>
+    <string name="day_mon">Pn</string>
+    <string name="day_tue">Wt</string>
+    <string name="day_wed">Śr</string>
+    <string name="day_thu">Cz</string>
+    <string name="day_fri">Pt</string>
+    <string name="day_sat">Sb</string>
+    <string name="day_sun">Nd</string>
+
+    <!-- Assistant Screen -->
+    <string name="assistant_title">Inteligentny asystent</string>
+    <string name="assistant_back">Wróć</string>
+    <string name="assistant_icon_desc">Ikona inteligentnego asystenta</string>
+    <string name="assistant_hint_text">Powiedz lub napisz, co chcesz zrobić, np. \'Wizyta u lekarza jutro o 15\' albo \'Przypominaj o lekach co poniedziałek o 10\'.</string>
+    <string name="assistant_confirm_a11y">Zatwierdź dodanie do kalendarza</string>
+    <string name="assistant_confirm_btn">TAK, DODAJ</string>
+    <string name="assistant_cancel_a11y">Odrzuć i anuluj</string>
+    <string name="assistant_cancel_btn">ANULUJ</string>
+    <string name="assistant_input_label">Wpisz tutaj…</string>
+    <string name="assistant_mic_prompt">Mów, zamienię to na tekst…</string>
+    <string name="assistant_mic_error">Brak obsługi rozpoznawania mowy</string>
+    <string name="assistant_mic_a11y">Dyktuj</string>
+    <string name="assistant_loading_text">MYŚLĘ…</string>
+    <string name="assistant_send_btn">WYŚLIJ</string>
+
+    <!-- Assistant ViewModel -->
+    <string name="assistant_msg_event_format">Zrozumiałem, że chcesz zapisać w kalendarzu:\n\n📌 %1$s\n📅 %2$s\n⏰ %3$s\n\nCzy mam to zapisać?</string>
+    <string name="assistant_msg_recurring_format">Czy dodać przypomnienie cykliczne:\n\n🔄 %1$s\n📅 W dni: %2$s\n⏰ O godzinie: %3$s\n\nCzy mam to zapisać?</string>
+    <string name="assistant_msg_confirmed_event">Gotowe! Zapisałem to w Twoim kalendarzu. ✅</string>
+    <string name="assistant_msg_confirmed_recurring">Gotowe! Dodałem przypomnienia cykliczne. 🔄</string>
+    <string name="assistant_msg_cancelled">Anulowano. Nic nie zapisałem. ❌\nCzy mogę pomóc w czymś jeszcze?</string>
+    <string name="assistant_day_monday">Poniedziałki</string>
+    <string name="assistant_day_tuesday">Wtorki</string>
+    <string name="assistant_day_wednesday">Środy</string>
+    <string name="assistant_day_thursday">Czwartki</string>
+    <string name="assistant_day_friday">Piątki</string>
+    <string name="assistant_day_saturday">Soboty</string>
+    <string name="assistant_day_sunday">Niedziele</string>
+
+    <!-- Help Request ViewModel -->
+    <string name="help_msg_error_unlogged">Błąd: Użytkownik nie jest zalogowany.</string>
+    <string name="help_msg_error_empty_desc">Opis zlecenia nie może być pusty.</string>
+    <string name="help_msg_success_created">Zlecenie utworzone! Powiadomiono opiekuna.</string>
+    <string name="help_msg_success_accepted">Zlecenie przejęte pomyślnie!</string>
+    <string name="help_msg_success_volunteer_done">Oznaczono jako wykonane. Oczekuje na potwierdzenie seniora.</string>
+    <string name="help_msg_success_senior_confirmed">Zlecenie zostało zakończone. Dziękujemy!</string>
+    <string name="help_msg_success_senior_confirmed_rating">Zlecenie zakończone. Dziękujemy za ocenę!</string>
+    <string name="help_msg_success_rejected">Zgłoszono problem. Zlecenie znów jest dostępne dla innych.</string>
+    <string name="help_msg_success_cancelled">Zlecenie zostało pomyślnie anulowane.</string>
+    <string name="help_msg_success_no_show">Zgłoszono brak stawienia się wolontariusza.</string>
+    <string name="help_msg_error_load">Błąd ładowania zleceń: %s</string>
+    <string name="help_msg_error_load_archive">Błąd ładowania archiwum: %s</string>
+    <string name="help_msg_error_fetch_data">Błąd pobierania danych: %s</string>
+    <string name="help_msg_error_accept">Błąd przejęcia: %s</string>
+    <string name="help_msg_error_generic">Błąd: %s</string>
+    <string name="help_msg_nearby_notification_title">Nowe zlecenie w okolicy!</string>
+    <string name="help_msg_nearby_notification_desc">Ktoś potrzebuje pomocy.</string>
+
+    <!-- Senior Moje Zlecenia Screen -->
+    <string name="senior_orders_title">Moje zlecenia</string>
+    <string name="senior_orders_cancel_dialog_title">Anuluj zlecenie</string>
+    <string name="senior_orders_cancel_dialog_message">Czy na pewno chcesz anulować to zlecenie?</string>
+    <string name="senior_orders_cancel_dialog_confirm">TAK, ANULUJ</string>
+    <string name="senior_orders_cancel_dialog_dismiss">WRÓĆ</string>
+    <string name="senior_orders_report_dialog_title">Zgłoszenie problemu</string>
+    <string name="senior_orders_report_dialog_message">Czy wolontariusz nie pojawił się lub nie pomógł Ci w zadaniu? Zlecenie wróci na listę jako aktywne i wyjaśnimy tę sytuację.</string>
+    <string name="senior_orders_report_dialog_confirm">ZGŁOŚ PROBLEM</string>
+    <string name="senior_orders_rating_dialog_title">Dziękujemy!</string>
+    <string name="senior_orders_rating_dialog_subtitle">Jak oceniasz pomoc wolontariusza?</string>
+    <string name="senior_orders_rating_dialog_confirm">ZATWIERDŹ</string>
+    <string name="senior_orders_empty_title">Brak aktywnych zgłoszeń</string>
+    <string name="status_finished">Zakończone</string>
+
+    <!-- Services -->
+    <string name="service_shopping">Zakupy</string>
+    <string name="service_meds">Wykupienie leków</string>
+    <string name="service_transport">Transport do lekarza</string>
+    <string name="service_tech_help">Pomoc ze smartfonem/TV</string>
+    <string name="service_official_matters">Sprawy urzędowe</string>
+    <string name="service_cleaning">Sprzątanie</string>
+    <string name="service_dog_walking">Wyprowadzenie psa</string>
+    <string name="service_repairs">Drobne naprawy</string>
+    <string name="service_company">Spacer i towarzystwo</string>
+</resources>

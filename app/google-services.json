@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "107382205367",
+    "project_id": "zst-senior-assistant",
+    "storage_bucket": "zst-senior-assistant.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107382205367:android:b33d066e47ef3ed0951632",
+        "android_client_info": {
+          "package_name": "com.zst.senior.assistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeRPO4oDIq1CYmAQ0opZf0n3NEvU5Eg5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,57 @@
+package com.zst.senior.assistant.utils
+
+import android.content.Context
+import android.net.ConnectivityManager
+import android.net.Network
+import android.net.NetworkCapabilities
+import android.net.NetworkRequest
+import kotlinx.coroutines.channels.awaitClose
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.callbackFlow
+import kotlinx.coroutines.flow.distinctUntilChanged
+
+/**
+ * Obserwator stanu sieci, który monitoruje dostępność internetu w czasie rzeczywistym.
+ * Wykorzystuje [ConnectivityManager.NetworkCallback] do emitowania zmian stanu
+ * za pomocą Kotlin Flow.
+ */
+class ConnectivityObserver(context: Context) {
+    private val connectivityManager =
+        context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+
+    /**
+     * Strumień Flow emitujący `true`, gdy internet jest dostępny, lub `false` w przeciwnym razie.
+     * Na starcie emituje aktualny stan połączenia.
+     */
+    val isConnected: Flow<Boolean> = callbackFlow {
+        val callback = object : ConnectivityManager.NetworkCallback() {
+            override fun onAvailable(network: Network) {
+                trySend(true)
+            }
+
+            override fun onLost(network: Network) {
+                trySend(false)
+            }
+
+            override fun onUnavailable() {
+                trySend(false)
+            }
+        }
+
+        val request = NetworkRequest.Builder()
+            .addCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
+            .build()
+
+        // Sprawdzenie początkowego stanu sieci
+        val activeNetwork = connectivityManager.activeNetwork
+        val capabilities = connectivityManager.getNetworkCapabilities(activeNetwork)
+        val initiallyConnected = capabilities?.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET) == true
+        trySend(initiallyConnected)
+
+        connectivityManager.registerNetworkCallback(request, callback)
+
+        awaitClose {
+            connectivityManager.unregisterNetworkCallback(callback)
+        }
+    }.distinctUntilChanged()
+}

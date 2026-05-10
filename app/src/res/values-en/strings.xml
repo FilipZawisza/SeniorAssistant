@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Senior Assistant</string>
+
+    <!-- Login Screen -->
+    <string name="login_back">Back</string>
+    <string name="login_logo_desc">Application logo</string>
+    <string name="login_welcome_back">Welcome back!</string>
+    <string name="login_subtitle">Log in to continue.</string>
+    <string name="login_email_label">Email Address</string>
+    <string name="login_email_icon_desc">Email field icon</string>
+    <string name="login_password_label">Password</string>
+    <string name="login_password_icon_desc">Password field icon</string>
+    <string name="login_password_hide">Hide password</string>
+    <string name="login_password_show">Show password</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_loading">Logging in…</string>
+    <string name="login_button">Log in</string>
+    <string name="login_no_account">Don\'t have an account?</string>
+    <string name="login_register_button">Sign up</string>
+    <string name="login_error_email_empty">Enter email address</string>
+    <string name="login_error_email_invalid">Invalid email address format</string>
+    <string name="login_error_password_empty">Enter password</string>
+    <string name="login_error_password_short">Password is too short</string>
+
+    <!-- Register Screen -->
+    <string name="register_title">Create Account</string>
+    <string name="register_subtitle">Fill in the form to join.</string>
+    <string name="register_success_title">Registration completed</string>
+    <string name="register_success_message">Verification link sent! Check your email box (including spam folder) to activate the account before logging in.</string>
+    <string name="register_understand">I understand</string>
+    <string name="register_back">Back</string>
+    <string name="register_role_label">I am registering as:</string>
+    <string name="register_role_senior">Senior</string>
+    <string name="register_role_volunteer">Volunteer</string>
+    <string name="register_first_name_label">First Name</string>
+    <string name="register_last_name_label">Last Name</string>
+    <string name="register_phone_label">Phone Number</string>
+    <string name="register_city_label">City</string>
+    <string name="register_street_label">Street</string>
+    <string name="register_confirm_password_label">Confirm password</string>
+    <string name="register_error_passwords_mismatch">Passwords do not match.</string>
+    <string name="register_icon_profile_desc">Profile icon</string>
+    <string name="register_icon_email_desc">Email icon</string>
+    <string name="register_icon_phone_desc">Phone icon</string>
+    <string name="register_icon_city_desc">City icon</string>
+    <string name="register_icon_home_desc">Home icon</string>
+    <string name="register_icon_lock_desc">Lock icon</string>
+    <string name="register_button">Sign up</string>
+
+    <!-- Senior Welcome Screen -->
+    <string name="welcome_greeting">Good morning!</string>
+    <string name="welcome_subtitle">How can we help you?</string>
+    <string name="welcome_info_tts">About the application</string>
+    <string name="welcome_logout_tts">Logged out of the application</string>
+    <string name="welcome_about_desc">About application</string>
+    <string name="welcome_logout_desc">Log out</string>
+    <string name="welcome_help_title">I need help</string>
+    <string name="welcome_help_subtitle">Shopping, transport, repairs</string>
+    <string name="welcome_my_orders_title">My orders</string>
+    <string name="welcome_my_orders_subtitle">Status of active reports</string>
+    <string name="welcome_ai_assistant_title">Smart assistant</string>
+    <string name="welcome_ai_assistant_subtitle">Tell me what to do</string>
+    <string name="welcome_brain_training_title">Brain training</string>
+    <string name="welcome_brain_training_subtitle">Play Seniordle</string>
+    <string name="welcome_chat_title">General chat</string>
+    <string name="welcome_chat_subtitle">Talk with others</string>
+    <string name="welcome_reminders_title">Reminders</string>
+    <string name="welcome_calendar_title">Calendar</string>
+    <string name="welcome_profile_title">Profile</string>
+    <string name="welcome_settings_title">Settings</string>
+</resources>

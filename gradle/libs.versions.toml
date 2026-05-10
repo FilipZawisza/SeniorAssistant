@@ -1,0 +1,120 @@
+# =========================================================================================
+# GRADLE VERSION CATALOG (libs.versions.toml)
+#
+# Ten plik służy jako centralne miejsce zarządzania wszystkimi zależnościami (bibliotekami)
+# oraz wtyczkami (plugins) w projekcie. Zamiast "hardcodować" wersje w plikach build.gradle,
+# definiujemy je tutaj, co pozwala na bezpieczniejsze i łatwiejsze aktualizacje.
+# =========================================================================================
+
+[versions]
+# --- AGP (Android Gradle Plugin) i Kotlin ---
+agp = "9.2.1"
+kotlin = "2.3.20"
+
+# --- AndroidX i Podstawowe narzędzia ---
+coreSplashscreen = "1.2.0"
+coreKtx = "1.18.0"
+lifecycleRuntimeKtx = "2.10.0"
+securityCrypto = "1.1.0"
+
+# --- Testy ---
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+
+# --- Jetpack Compose (Interfejs Użytkownika) ---
+activityCompose = "1.13.0"
+composeBom = "2026.04.01" # BOM (Bill of Materials) - synchronizuje wersje wszystkich bibliotek Compose
+navigationRuntimeKtx = "2.9.8"
+navigationCompose = "2.9.8"
+animationCoreLint = "1.11.0"
+ui = "1.11.0"
+materialIconsExtended = "1.7.8"
+
+# --- Firebase ---
+firebaseBom = "34.12.0" # BOM dla Firebase - utrzymuje kompatybilność między auth, firestore itd.
+firebaseSessions = "3.0.5"
+
+# --- Google Services, Coroutines, AI ---
+googleGmsGoogleServices = "4.4.4"
+kotlinxCoroutinesPlayServices = "1.10.2"
+playServicesLocation = "21.3.0"
+generativeai = "0.9.0"
+
+[libraries]
+# =========================================================
+# GŁÓWNE BIBLIOTEKI ANDROIDX I SYSTEMOWE
+# =========================================================
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-security-crypto = { group = "androidx.security", name = "security-crypto", version.ref = "securityCrypto" }
+
+# =========================================================
+# JETPACK COMPOSE (UI)
+# =========================================================
+# BOM automatycznie dostarcza wersje dla bibliotek poniżej (dlatego nie mają version.ref)
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material3-adaptive-navigation-suite = { group = "androidx.compose.material3", name = "material3-adaptive-navigation-suite" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "ui" }
+androidx-compose-animation-core-lint = { group = "androidx.compose.animation", name = "animation-core-lint", version.ref = "animationCoreLint" }
+androidx-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "materialIconsExtended" }
+
+# Nawigacja w Compose
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+
+# =========================================================
+# FIREBASE (Chmura, Baza Danych, Autoryzacja)
+# =========================================================
+# Firebase BOM automatycznie zarządza wersjami auth i firestore
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth" }
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore" }
+firebase-sessions = { group = "com.google.firebase", name = "firebase-sessions", version.ref = "firebaseSessions" }
+
+# =========================================================
+# GOOGLE PLAY SERVICES & COROUTINES (Usługi w tle, asynchroniczność)
+# =========================================================
+# Pomost pozwalający używać .await() na Taskach Firebase'a
+kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "kotlinxCoroutinesPlayServices" }
+# Moduł odpowiedzialny za pobieranie koordynatów GPS
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+
+# =========================================================
+# AI (Sztuczna Inteligencja)
+# =========================================================
+generativeai = { group = "com.google.ai.client.generativeai", name = "generativeai", version.ref = "generativeai" }
+
+# =========================================================
+# NARZĘDZIA TESTOWE
+# =========================================================
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+
+[plugins]
+# =========================================================
+# WTYCZKI GRADLE (PLUGINS)
+# =========================================================
+# Główna wtyczka aplikacji Androidowej
+android-application = { id = "com.android.application", version.ref = "agp" }
+
+# Wsparcie dla języka Kotlin w środowisku Android
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+# Nowy kompilator Jetpack Compose podłączony pod cykl wydawniczy Kotlina
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+# Wtyczka usług Google, niezbędna do kompilacji i działania środowiska Firebase
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
