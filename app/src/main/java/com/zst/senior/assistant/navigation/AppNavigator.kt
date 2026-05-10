@@ -8,11 +8,13 @@ import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavController
@@ -65,11 +67,28 @@ fun AppNavigator(
     // Pobieranie aktualnego stanu autoryzacji (zalogowany użytkownik i jego rola)
     val currentUserId by authViewModel.currentUserId.collectAsState()
     val userRole by authViewModel.userRole.collectAsState()
+    val isRestoringSession by authViewModel.isRestoringSession.collectAsState()
 
-    // Określenie punktu startowego na podstawie statusu onboardingu
-    val startDestination = remember {
-        val sharedPrefs = context.getSharedPreferences("OnboardingPrefs", Context.MODE_PRIVATE)
-        if (sharedPrefs.getBoolean("hasSeenOnboarding", false)) AppRoutes.LOGIN else AppRoutes.ONBOARDING
+    if (isRestoringSession) {
+        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            CircularProgressIndicator()
+        }
+        return
+    }
+
+    // Określenie punktu startowego na podstawie statusu autoryzacji i onboardingu
+    val startDestination = remember(currentUserId, userRole) {
+        if (currentUserId != null && userRole != null) {
+            when (userRole) {
+                UserRole.SENIOR.collectionName -> AppRoutes.SENIOR_WELCOME
+                UserRole.WOLONTARIUSZ.collectionName -> AppRoutes.WOLONTARIUSZ_WELCOME
+                UserRole.ADMIN.collectionName -> AppRoutes.ADMIN_WELCOME
+                else -> AppRoutes.LOGIN
+            }
+        } else {
+            val sharedPrefs = context.getSharedPreferences("OnboardingPrefs", Context.MODE_PRIVATE)
+            if (sharedPrefs.getBoolean("hasSeenOnboarding", false)) AppRoutes.LOGIN else AppRoutes.ONBOARDING
+        }
     }
 
     // --- AUTOMATYCZNE WZNAWIANIE SESJI (AUTO-LOGIN) ---

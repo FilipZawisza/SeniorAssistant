@@ -35,6 +35,9 @@ class AuthViewModel(
     private val _currentUserId = MutableStateFlow<String?>(null)
     val currentUserId: StateFlow<String?> = _currentUserId.asStateFlow()
 
+    private val _isRestoringSession = MutableStateFlow(true)
+    val isRestoringSession: StateFlow<Boolean> = _isRestoringSession.asStateFlow()
+
     private val _currentUserRole = MutableStateFlow<String?>(null)
     val userRole: StateFlow<String?> = _currentUserRole.asStateFlow()
 
@@ -190,10 +193,15 @@ class AuthViewModel(
                     }
                 } catch (e: Exception) {
                     logout()
+                } finally {
+                    _isRestoringSession.value = false
                 }
             }
-        } else if (user != null || savedUserId != null) {
-            logout()
+        } else {
+            if (user != null || savedUserId != null) {
+                logout()
+            }
+            _isRestoringSession.value = false
         }
     }
 
