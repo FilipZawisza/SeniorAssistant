@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" alt="Logo aplikacji" width="800">
+  <img src="assets/logo.png" alt="Logo aplikacji" width="100%">
 </div>
 
 # 📱 Senior Assistant
