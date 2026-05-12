@@ -449,7 +449,7 @@ private fun FontSizeCard(
                 tts.speak(fontTtsFormat.format(percentage))
             },
             valueRange = 0.8f..1.5f, // Zakres od 80% do 150%
-            steps = 7, // Skok co 10%, teraz nieparzysta ilosc
+            steps = 13, // Skok co 5%, 1.15 jest dokładnie na środku
             colors = SliderDefaults.colors(
                 thumbColor = if (isHighContrast) colors.primaryHighContrast else MaterialTheme.colorScheme.primary,
                 activeTrackColor = if (isHighContrast) colors.primaryHighContrast else MaterialTheme.colorScheme.primary,
@@ -459,7 +459,7 @@ private fun FontSizeCard(
 
         // Etykiety pod suwakiem
         Row(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(stringResource(R.string.settings_font_small), style = MaterialTheme.typography.labelSmall, color = colors.cardSubText)

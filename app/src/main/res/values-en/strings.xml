@@ -236,6 +236,10 @@
     <string name="admin_archive_empty_title">Empty Archive</string>
     <string name="admin_archive_empty_subtitle">No completed orders found in history.</string>
     <string name="admin_orders_back">Back</string>
+    <string name="admin_orders_delete_confirm_title">Delete Order</string>
+    <string name="admin_orders_delete_confirm_message">Are you sure you want to permanently delete this order from the database?</string>
+    <string name="admin_orders_delete_btn">DELETE</string>
+    <string name="admin_orders_delete_a11y">Delete order</string>
 
     <!-- Privacy Policy Screen -->
     <string name="privacy_title">Privacy Policy</string>
@@ -567,6 +571,7 @@
     <string name="help_msg_success_rejected">Problem reported. Order is available for others again.</string>
     <string name="help_msg_success_cancelled">Order successfully cancelled.</string>
     <string name="help_msg_success_no_show">Reported volunteer no-show.</string>
+    <string name="help_msg_success_deleted">Order deleted successfully.</string>
     <string name="help_msg_error_load">Error loading orders: %s</string>
     <string name="help_msg_error_load_archive">Error loading archive: %s</string>
     <string name="help_msg_error_fetch_data">Error retrieving data: %s</string>

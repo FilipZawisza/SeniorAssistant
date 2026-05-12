@@ -33,7 +33,7 @@ class SettingsRepository(context: Context) {
         // NOWY KLUCZ:
         private const val KEY_GUARDIAN_PHONE = "key_guardian_phone"
 
-        private const val DEFAULT_FONT_SCALE = 1.0f
+        private const val DEFAULT_FONT_SCALE = 1.15f
     }
 
     /**

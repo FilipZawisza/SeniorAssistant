@@ -256,6 +256,20 @@ class HelpRequestViewModel(
         }
     }
 
+    /** Administrator usuwa zlecenie. */
+    fun usunZlecenie(zlecenieId: String, isArchive: Boolean) {
+        _actionUiState.value = ZlecenieActionUiState.Loading
+        viewModelScope.launch {
+            try {
+                repository.deleteZlecenie(zlecenieId)
+                _actionUiState.value = ZlecenieActionUiState.Success(application.getString(R.string.help_msg_success_deleted))
+                if (isArchive) fetchArchiwalneZlecenia() else fetchAllZlecenia()
+            } catch (e: Exception) {
+                _actionUiState.value = ZlecenieActionUiState.Error(application.getString(R.string.help_msg_error_generic, e.message))
+            }
+        }
+    }
+
     /** Pobiera zlecenia dla zalogowanego Seniora. */
     fun fetchMojeZleceniaDlaSeniora() {
         val seniorId = authViewModel.currentUserId.value ?: run {

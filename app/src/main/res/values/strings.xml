@@ -236,6 +236,10 @@
     <string name="admin_archive_empty_title">Puste Archiwum</string>
     <string name="admin_archive_empty_subtitle">Nie znaleziono żadnych zakończonych zleceń in historii.</string>
     <string name="admin_orders_back">Wróć</string>
+    <string name="admin_orders_delete_confirm_title">Usuń zlecenie</string>
+    <string name="admin_orders_delete_confirm_message">Czy na pewno chcesz trwale usunąć to zlecenie z bazy danych?</string>
+    <string name="admin_orders_delete_btn">USUŃ</string>
+    <string name="admin_orders_delete_a11y">Usuń zlecenie</string>
 
     <!-- Privacy Policy Screen -->
     <string name="privacy_title">Polityka Prywatności</string>
@@ -567,6 +571,7 @@
     <string name="help_msg_success_rejected">Zgłoszono problem. Zlecenie znów jest dostępne dla innych.</string>
     <string name="help_msg_success_cancelled">Zlecenie zostało pomyślnie anulowane.</string>
     <string name="help_msg_success_no_show">Zgłoszono brak stawienia się wolontariusza.</string>
+    <string name="help_msg_success_deleted">Zlecenie zostało pomyślnie usunięte.</string>
     <string name="help_msg_error_load">Błąd ładowania zleceń: %s</string>
     <string name="help_msg_error_load_archive">Błąd ładowania archiwum: %s</string>
     <string name="help_msg_error_fetch_data">Błąd pobierania danych: %s</string>

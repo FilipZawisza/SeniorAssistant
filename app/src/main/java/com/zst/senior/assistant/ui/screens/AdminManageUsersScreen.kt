@@ -52,7 +52,6 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -66,8 +65,6 @@ import com.zst.senior.assistant.navigation.safePopBackStack
 import com.zst.senior.assistant.ui.components.CustomPasswordTextField
 import com.zst.senior.assistant.ui.components.CustomTextField
 import com.zst.senior.assistant.ui.components.GradientButton
-import com.zst.senior.assistant.ui.theme.BrandBlue
-import com.zst.senior.assistant.ui.theme.BrandOrange
 import com.zst.senior.assistant.ui.theme.WcagBlack
 import com.zst.senior.assistant.viewmodel.AuthViewModel
 import kotlinx.coroutines.launch
@@ -140,17 +137,8 @@ fun AdminManageUsersScreen(
 
     val isHighContrast = MaterialTheme.colorScheme.background == WcagBlack
 
-    val backgroundModifier = Modifier.fillMaxSize().then(
-        if (isHighContrast) {
-            Modifier.background(MaterialTheme.colorScheme.background)
-        } else {
-            Modifier.background(
-                Brush.verticalGradient(colors = listOf(BrandBlue, BrandOrange))
-            )
-        }
-    )
-
-    val topContentColor = if (isHighContrast) MaterialTheme.colorScheme.primary else Color.White
+    val backgroundColor = if (isHighContrast) Color.Black else Color(0xFFFAFAFA)
+    val topContentColor = if (isHighContrast) MaterialTheme.colorScheme.primary else Color.Black
     val inputColorHC = MaterialTheme.colorScheme.secondary
     val inputColorStd = MaterialTheme.colorScheme.primary
     val errorColor = MaterialTheme.colorScheme.error
@@ -266,7 +254,7 @@ fun AdminManageUsersScreen(
         )
     }
 
-    Box(modifier = backgroundModifier) {
+    Box(modifier = Modifier.fillMaxSize().background(backgroundColor)) {
         Scaffold(
             snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
             containerColor = Color.Transparent,
@@ -338,7 +326,7 @@ fun AdminManageUsersScreen(
                                 ),
                             shape = RoundedCornerShape(24.dp),
                             colors = CardDefaults.cardColors(
-                                containerColor = if (isHighContrast) Color.Black else Color.White.copy(alpha = 0.9f)
+                                containerColor = if (isHighContrast) Color.Black else Color.White
                             ),
                             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
                         ) {
@@ -459,7 +447,7 @@ fun AdminManageUsersScreen(
                                 ),
                             shape = RoundedCornerShape(24.dp),
                             colors = CardDefaults.cardColors(
-                                containerColor = if (isHighContrast) Color.Black else Color.White.copy(alpha = 0.9f)
+                                containerColor = if (isHighContrast) Color.Black else Color.White
                             ),
                             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
                         ) {

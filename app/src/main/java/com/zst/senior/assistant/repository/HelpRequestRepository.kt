@@ -464,6 +464,15 @@ class HelpRequestRepository {
         }
     }
 
+    /**
+     * Usuwa zlecenie z bazy danych.
+     *
+     * @param zlecenieId ID zlecenia do usunięcia.
+     */
+    suspend fun deleteZlecenie(zlecenieId: String) {
+        db.collection("Zlecenia").document(zlecenieId).delete().await()
+    }
+
     private fun extractTimestamp(doc: DocumentSnapshot): Long {
         return try {
             val ts = doc.get("Timestamp")

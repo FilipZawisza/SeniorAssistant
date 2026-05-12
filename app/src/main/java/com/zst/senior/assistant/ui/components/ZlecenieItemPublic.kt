@@ -15,10 +15,12 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.WorkOutline
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -48,12 +50,14 @@ import com.zst.senior.assistant.ui.theme.BrandOrange
  * specjalna etykieta (badge) informująca o aktualnym statusie zlecenia (np. "Wolne", "Aktywne").
  * @param onClick Funkcja zwrotna wywoływana po kliknięciu w dowolne miejsce na karcie.
  * Zazwyczaj inicjuje nawigację do ekranu szczegółów wybranego zlecenia.
+ * @param onDeleteClick Opcjonalna funkcja wywoływana po kliknięciu ikony usuwania (widoczna tylko dla admina).
  */
 @Composable
 fun ZlecenieItemPublic(
     zlecenie: ZlecenieRef,
     isAdminView: Boolean,
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    onDeleteClick: (() -> Unit)? = null
 ) {
     val statusText = zlecenie.status ?: "Wolne"
 
@@ -163,6 +167,18 @@ fun ZlecenieItemPublic(
             }
 
             Spacer(Modifier.width(8.dp))
+
+            // --- PRZYCISK USUWANIA (Admin) ---
+            if (isAdminView && onDeleteClick != null) {
+                IconButton(onClick = onDeleteClick) {
+                    Icon(
+                        imageVector = Icons.Default.Delete,
+                        contentDescription = stringResource(R.string.admin_orders_delete_a11y),
+                        tint = if (isHighContrast) MaterialTheme.colorScheme.error else Color.Red.copy(alpha = 0.7f)
+                    )
+                }
+                Spacer(Modifier.width(4.dp))
+            }
 
             // --- STRZAŁKA ---
             Icon(
