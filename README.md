@@ -1,159 +1,229 @@
 <div align="center">
-  <img src="assets/logo.png" alt="Logo aplikacji" width="100%">
+  <img src="assets/logo.png" alt="Senior Assistant Banner" width="100%">
 </div>
 
-# 📱 Senior Assistant
+<h1 align="center">Senior Assistant</h1>
 
-## Profesjonalna aplikacja mobilna wspierająca seniorów i wolontariuszy
+<p align="center">
+  Aplikacja mobilna wspierająca seniorów oraz wolontariuszy
+</p>
 
-**Senior Assistant** to nowoczesna aplikacja mobilna dla systemu
-Android, której celem jest usprawnienie komunikacji pomiędzy seniorami a
-wolontariuszami, organizowanie codziennej pomocy oraz wspieranie
-użytkowników w zarządzaniu obowiązkami (np. przypomnienia o lekach czy
-wizytach lekarskich).
+<p align="center">
+  Kotlin • Android Studio • Gradle • Android SDK
+</p>
 
-Projekt został w całości zaimplementowany w języku Kotlin z
-wykorzystaniem środowiska Android Studio oraz systemu budowania Gradle.
-Repozytorium jest gotowe do bezpośredniego uruchomienia i dalszego
-rozwoju.
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Android-green" alt="Android">
+  <img src="https://img.shields.io/badge/Kotlin-1.9-purple" alt="Kotlin">
+  <img src="https://img.shields.io/badge/API-24%2B-blue" alt="API">
+  <img src="https://img.shields.io/badge/Status-Development-orange" alt="Status">
+</p>
 
-------------------------------------------------------------------------
+---
 
-## 📌 Opis projektu
+## Spis treści
 
-Senior Assistant powstał jako odpowiedź na realne potrzeby osób
-starszych, które wymagają wsparcia w codziennych czynnościach oraz
-prostego i intuicyjnego sposobu komunikacji z wolontariuszami.
+- [O projekcie](#o-projekcie)
+- [Cel projektu](#cel-projektu)
+- [Główne funkcjonalności](#główne-funkcjonalności)
+- [Dostępność](#dostępność)
+- [Prezentacja projektu](#prezentacja-projektu)
+- [Technologie](#technologie)
+- [Wymagania](#wymagania)
+- [Uruchomienie projektu](#uruchomienie-projektu)
+- [Konta testowe](#konta-testowe)
+- [Autorzy](#autorzy)
+- [Licencja](#licencja)
 
-Aplikacja umożliwia:
+---
 
--   szybkie zgłaszanie próśb o pomoc,
--   oferowanie wsparcia przez wolontariuszy,
--   zarządzanie przypomnieniami,
--   utrzymywanie aktualnych danych profilowych,
--   integrację z asystentem AI (po skonfigurowaniu klucza API).
+## O projekcie
 
-------------------------------------------------------------------------
+**Senior Assistant** to aplikacja mobilna dla systemu Android, której celem jest usprawnienie komunikacji pomiędzy seniorami a wolontariuszami oraz wsparcie użytkowników w codziennym funkcjonowaniu.
 
-## 🚀 Główne funkcjonalności
+Projekt umożliwia zarządzanie zgłoszeniami pomocy, przypomnieniami oraz podstawowymi informacjami użytkownika w prosty i intuicyjny sposób.
 
-### 🔐 Rejestracja i logowanie
+Aplikacja została napisana w języku **Kotlin** z wykorzystaniem środowiska **Android Studio** oraz systemu budowania **Gradle**.
 
--   Ekran startowy z podstawowymi informacjami o aplikacji.
--   Rejestracja nowego konta użytkownika.
--   Logowanie do istniejącego konta.
--   Wybór typu profilu: Senior lub Wolontariusz.
+---
 
-### 📝 Zarządzanie profilem
+## Cel projektu
 
--   Formularz rejestracyjny z podstawowymi danymi.
--   Możliwość edycji danych po utworzeniu konta.
--   Aktualizacja informacji kontaktowych.
+Celem projektu było stworzenie intuicyjnej aplikacji wspierającej osoby starsze w codziennym funkcjonowaniu oraz ułatwiającej organizację pomocy wolontariackiej.
 
-### 🏠 Panel główny
+Projekt skupia się na:
 
-Po zalogowaniu użytkownik uzyskuje dostęp do:
+- prostocie obsługi,
+- czytelnym interfejsie,
+- dostępności dla seniorów,
+- szybkim kontakcie pomiędzy użytkownikami,
+- wsparciu codziennych obowiązków.
 
--   Dodawania i przeglądania próśb o pomoc (Senior).
--   Przeglądania i realizowania zgłoszeń (Wolontariusz).
--   Ustawiania przypomnień (np. leki, wizyty).
--   Zarządzania profilem i ustawieniami.
+---
 
-------------------------------------------------------------------------
+## Główne funkcjonalności
 
-## 👥 Role użytkowników
+### System kont użytkowników
 
-### 👵 Senior
+- rejestracja i logowanie użytkowników,
+- bezpieczne uwierzytelnianie przy użyciu Firebase Authentication,
+- wybór typu konta:
+  - Senior,
+  - Wolontariusz,
+  - Administrator,
+- obsługa różnych poziomów uprawnień użytkowników,
+- możliwość zarządzania profilem użytkownika,
+- personalizacja funkcjonalności w zależności od typu konta.
 
--   Tworzenie próśb o pomoc.
--   Ustawianie przypomnień.
--   Edycja danych profilowych.
+### Funkcjonalności dla seniorów
 
-### 🤝 Wolontariusz
+- tworzenie próśb o pomoc,
+- szybki kontakt z opiekunem lub wolontariuszem,
+- zarządzanie przypomnieniami,
+- harmonogram wizyt lekarskich,
+- przypomnienia o przyjmowaniu leków,
+- edycja danych profilowych,
+- prosty i intuicyjny interfejs dostosowany do seniorów,
+- możliwość korzystania z asystenta AI w formie tekstowej i głosowej.
 
--   Przeglądanie dostępnych zgłoszeń.
--   Odpowiadanie na prośby seniorów.
--   Zarządzanie własnym profilem.
+### Funkcjonalności dla wolontariuszy
 
-### 🔨 Administrator
+- przeglądanie zgłoszeń seniorów,
+- odpowiadanie na prośby o pomoc,
+- monitorowanie statusu zgłoszeń,
+- odbieranie powiadomień alarmowych i zgłoszeń SOS,
+- możliwość zdalnego wsparcia seniora,
+- zarządzanie profilem użytkownika.
 
--   Dostęp do konta administracyjnego.
--   Możliwość testowania funkcjonalności aplikacji.
+### Automatyczny Detektor Upadków
 
-------------------------------------------------------------------------
+- działanie w tle przy użyciu Android Foreground Service,
+- analiza danych z akcelerometru urządzenia,
+- wykrywanie potencjalnych upadków seniora,
+- uruchamianie procedury alarmowej,
+- możliwość anulowania alarmu przez użytkownika,
+- automatyczne wysyłanie lokalizacji GPS do opiekuna.
 
-## 🧪 Profile testowe
+### Integracja AI
 
-**Senior**\
-E-mail: test.senior1@seniorassistant.pl\
-Hasło: test123
+- integracja z asystentem AI przy użyciu Gemini API,
+- możliwość naturalnej komunikacji z użytkownikiem,
+- obsługa pytań tekstowych i głosowych,
+- pomoc w codziennych czynnościach,
+- wsparcie w obsłudze telefonu i aplikacji,
+- obsługa konfiguracji klucza API lokalnie w projekcie,
+- możliwość dalszej rozbudowy funkcji AI.
 
-**Wolontariusz**\
-E-mail: test.wolontariusz1@seniorassistant.pl\
-Hasło: test123
+---
 
-**Administrator**\
-E-mail: test.admin1@seniorassistant.pl\
-Hasło: test123
+## Dostępność
 
-------------------------------------------------------------------------
+Interfejs aplikacji został zaprojektowany z myślą o seniorach:
 
-## 🛠️ Technologie
+- czytelny układ aplikacji,
+- duże i intuicyjne elementy interfejsu,
+- uproszczona nawigacja,
+- ograniczenie zbędnych elementów UI,
+- łatwy dostęp do najważniejszych funkcji.
 
--   Język programowania: Kotlin\
--   Środowisko: Android Studio\
--   System budowania: Gradle\
--   Minimalna wersja Androida: 7.0 (API 24)
+---
 
-------------------------------------------------------------------------
+## Prezentacja projektu
 
-## 💻 Wymagania systemowe
+Szczegółowa prezentacja projektu dostępna jest pod adresem:
 
--   Android Studio (zalecana najnowsza stabilna wersja)
--   Zainstalowane SDK Android 7.0 lub wyższe
--   Emulator Android lub urządzenie fizyczne
+**https://showcase.seniorassistant.pl**
 
-------------------------------------------------------------------------
+---
 
-## 📥 Instalacja i uruchomienie
+## Technologie
 
-1.  Sklonuj repozytorium:
+| Technologia | Zastosowanie |
+|---|---|
+| Kotlin | Główny język aplikacji |
+| Android Studio | Środowisko programistyczne |
+| Gradle | System budowania projektu |
+| Android SDK | Platforma mobilna |
+| Gemini API | Integracja asystenta AI |
 
-    git clone https://github.com/FilipZawisza/SeniorAssistant.git
+---
 
-2.  Otwórz projekt w Android Studio.
+## Wymagania
 
-3.  Poczekaj na zakończenie synchronizacji Gradle.
+Do uruchomienia projektu wymagane są:
 
-4.  Skonfiguruj klucz API (instrukcja poniżej).
+- Android Studio,
+- Android SDK 24 lub nowszy,
+- emulator Androida lub urządzenie fizyczne.
 
-5.  Uruchom aplikację na emulatorze lub urządzeniu fizycznym.
+---
 
-------------------------------------------------------------------------
+## Uruchomienie projektu
 
-## 🔑 Konfiguracja klucza API
+### 1. Klonowanie repozytorium
 
-Aby aktywować funkcję asystenta AI, należy dodać w pliku
-`local.properties` następującą linię:
+```bash
+git clone https://github.com/FilipZawisza/SeniorAssistant.git
+```
 
+### 2. Otwarcie projektu
+
+Otwórz projekt w Android Studio.
+
+### 3. Synchronizacja Gradle
+
+Poczekaj na zakończenie synchronizacji zależności.
+
+### 4. Konfiguracja API
+
+W pliku `local.properties` dodaj:
+
+```properties
 GEMINI_API_KEY=twoj_klucz_api
+```
 
-Bez tej konfiguracji funkcjonalność asystenta AI nie będzie działać.
+Bez konfiguracji klucza API funkcjonalności AI pozostaną wyłączone.
 
-------------------------------------------------------------------------
+### 5. Uruchomienie aplikacji
 
-## 📂 Struktura projektu
+Uruchom aplikację na emulatorze lub urządzeniu fizycznym.
 
-Projekt posiada standardową strukturę aplikacji Android:
+---
 
--   app/ -- główny moduł aplikacji\
--   manifests/ -- pliki konfiguracyjne Android\
--   java/ -- kod źródłowy Kotlin\
--   res/ -- zasoby (layouty, grafiki, stringi)\
--   Gradle Scripts -- konfiguracja budowania projektu
+## Konta testowe
 
-------------------------------------------------------------------------
+### Senior
 
-## 📄 Licencja
+| Pole | Wartość |
+|---|---|
+| Email | `test.senior1@seniorassistant.pl` |
+| Hasło | `test123` |
 
-Projekt przeznaczony do celów edukacyjnych i demonstracyjnych.
+### Wolontariusz
+
+| Pole | Wartość |
+|---|---|
+| Email | `test.wolontariusz1@seniorassistant.pl` |
+| Hasło | `test123` |
+
+### Administrator
+
+| Pole | Wartość |
+|---|---|
+| Email | `test.admin1@seniorassistant.pl` |
+| Hasło | `test123` |
+
+---
+
+## Autorzy
+
+Projekt został przygotowany przez:
+
+- Filip Zawisza
+- Dominik Szymczak
+
+---
+
+## Licencja
+
+Projekt został przygotowany w celach edukacyjnych i demonstracyjnych.
