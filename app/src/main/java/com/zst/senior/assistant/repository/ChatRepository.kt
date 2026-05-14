@@ -26,17 +26,17 @@ class ChatRepository {
     private val mutedCollection = db.collection("MutedUsers")
 
     /**
-     * Zwraca strumień (Flow) wiadomości z ostatnich 7 dni w czasie rzeczywistym.
+     * Zwraca strumień (Flow) wiadomości z ostatniego miesiąca w czasie rzeczywistym.
      *
      * @return Flow zawierający listę deszyfrowanych obiektów [ChatMessage].
      */
     fun getMessagesFlow(): Flow<List<ChatMessage>> = callbackFlow {
-        val sevenDaysAgo = Calendar.getInstance().apply {
-            add(Calendar.DAY_OF_YEAR, -7)
+        val oneMonthAgo = Calendar.getInstance().apply {
+            add(Calendar.MONTH, -1)
         }
 
         val listener = chatCollection
-            .whereGreaterThan("timestamp", Timestamp(sevenDaysAgo.time))
+            .whereGreaterThan("timestamp", Timestamp(oneMonthAgo.time))
             .orderBy("timestamp", Query.Direction.ASCENDING)
             .addSnapshotListener { snapshots, error ->
                 if (error != null) {
