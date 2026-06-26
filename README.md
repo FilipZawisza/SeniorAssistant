@@ -190,31 +190,6 @@ Uruchom aplikację na emulatorze lub urządzeniu fizycznym.
 
 ---
 
-## Konta testowe
-
-### Senior
-
-| Pole | Wartość |
-|---|---|
-| Email | `test.senior1@seniorassistant.pl` |
-| Hasło | `test123` |
-
-### Wolontariusz
-
-| Pole | Wartość |
-|---|---|
-| Email | `test.wolontariusz1@seniorassistant.pl` |
-| Hasło | `test123` |
-
-### Administrator
-
-| Pole | Wartość |
-|---|---|
-| Email | `test.admin1@seniorassistant.pl` |
-| Hasło | `test123` |
-
----
-
 ## Autorzy
 
 Projekt został przygotowany przez:
